@@ -1,0 +1,442 @@
+
+/*** Spinner Start ***/
+
+ .center{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #151414;
+    
+ }
+
+ .ring{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+ }
+
+ @keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b201;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+ }
+
+ .ring::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+ }
+
+ .load_span{
+    color: #737373;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: text 2s ease-in-out infinite;
+ }
+
+ @keyframes text {
+    50%{
+        color: #e65c00;
+    }
+ }
+
+/*** Spinner End ***/
+
+
+.MuiBox-root .topbar-custom {
+    /* height: 40px; */
+    /* padding: 10px 0px; */
+    background-color: rgba(84, 80, 80, 0.89);
+}
+
+.MuiBox-root .navbar-custom {
+    background-color: rgba(16, 15, 15, 0.89);
+    /* height: 90px; */
+    padding: 10px 0px;
+    position: relative;
+    z-index: auto;
+    top: auto;
+}
+
+.MuiBox-root .navbar-custom .MuiToolbar-root .MuiTypography-h6 {
+    color: rgb(255, 77, 0);
+    font-weight: 300;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.MuiBox-root .MuiBox-root .MuiTypography-h5 {
+    color: rgb(255, 77, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.MuiBox-root .MuiBox-root .MuiTypography-h2 {
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.login_box {
+    background-image: url('/public/Image/logimg.jpg');
+    background-size: cover;
+    background-position: center;
+    /* min-height: 100vh; */
+    min-height: min(50vw, 120vh);
+    width: 100%;
+}
+
+.login_box .MuiTypography-h3 {
+    color: rgb(241, 69, 6);
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    border: 2px solid #ccc;
+    padding: 10px 50px;
+    width: 40vw;
+    text-align: center;
+}
+
+/* for login form */
+.loginform_custom {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 30px;
+}
+.loginform_custom input{
+    color: #fff;
+    /* border: 1px solid #ccc !important; */
+}
+
+.MuiGrid-root .link_custom {
+    color: aliceblue;
+}
+
+.button_custom {
+    color: white !important;
+    font-weight: 300 !important;
+    border: 2px solid transparent !important;
+}
+
+.button_custom:hover {
+    color: rgb(255, 77, 0);
+    background-color: aliceblue;
+    border-color: #fff !important;
+}
+
+/* for sign up form */
+.reg_custom {
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 130px auto !important;
+    padding: 16px 0;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    align-items: center;
+}
+
+.reg_button_custom{
+    color: #f5f5f5 !important;
+    border: 2px solid transparent !important;
+}
+
+.reg_button_custom:hover{
+    color: #e65c00 !important;
+    border-color: #e65c00 !important;
+    font-weight: 600;
+}
+
+/* Home content */
+.content_container{
+    padding: 50px 0px;
+}
+
+.content_container .heading_custom{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.content_container .heading_custom h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.content_container .heading_custom .body1_custom{
+    color: rgb(255, 77, 0);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+
+.content_container .MuiTypography-h5{
+    color: #ff5e14;
+    font-weight: 700;
+}
+
+.content_container .serviceBtn_custom{
+    background-color: #373636;
+    color: #fff;
+    padding: 5px 20px;
+}
+.content_container .serviceBtn_custom:hover{
+    background-color: rgb(255, 77, 0);
+}
+
+/*service details part*/
+.content_container .servicecard_custom{
+    margin: 30px 0px;
+}
+
+.content_container .servicecard_custom .servicecontent_custom{
+    text-align: center;
+    
+}
+
+.content_container .servicecard_custom .servicecontent_custom .MuiTypography-h5{
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.content_container .servicecard_custom .servicecontent_custom .desc_section{
+    margin: 0px 60px 60px 60px;
+}
+
+.join_btn{
+    background-color: #e65c00 !important;
+    color: #151414 !important;
+    font-weight: 700 !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+/* joining form part */
+.joiningform_custom{
+    padding-top: 200px;
+    margin: 100px auto;
+}
+.joiningform_img {
+    background-color: #eb7843;
+    padding: 25px;
+}
+.joiningform_img .jForm_heading {
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+.joiningform_img .img_underline{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #e60400;
+    font-size: 30px;
+}
+
+
+
+.jForm_rightside_heading{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: 40px !important;
+}
+
+/* blog part */
+.blog_card{
+    margin: 40px 0px;
+    /* display: flex; */
+    
+}
+
+.blog_card .blog_content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: hsl(0, 1%, 15%);
+    /* padding: 60px 20px; */
+}
+
+.blog_card .blog_content .MuiTypography-h5{
+    color: rgb(255, 77, 0);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 100px 0px;
+}
+
+/* blogdetails part */
+.blogdetail_content{
+    text-align: center;
+    margin: 20px;
+}
+.blogdetail_content .MuiTypography-h5{
+    color: #ff5e14;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.blogdetail_content .MuiTypography-h6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.recentblog_heading{
+    background-color: #373636;
+    color: #ff5e14;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.blogBtn{
+    background-color: #ff5e14 !important;
+    margin: 20px auto !important;
+    color: #fff !important;
+}
+
+.seermore_btn{
+    color: #e65c00 !important;
+    font-weight: 600 !important;
+}
+
+.link_custom{
+    color: #151414;
+    text-decoration: none;
+    
+}
+
+/* profile section */
+.profile_box{
+    padding: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.profile_card{
+    margin: 30px;
+    margin-bottom: 50px;
+    width: 600px;
+    /* padding: 20px; */
+    
+}
+
+.profile_avatar{
+    background-color: #ff5e14;
+    /* text-align: center;
+    padding-left: 50px;
+    padding-top: 30px; */
+    
+}
+
+.profile_info{
+    padding: 20px 30px;
+    background-color: #151414;
+    color: #fff;
+}
+
+.profile_info .MuiTypography-h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.booking_headings{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: 15px !important;
+    /* font-weight: 700 !important; */
+}
+
+.booking_names{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-weight: 700 !important;
+    color: #e60400;
+}
+
+.booking_status{
+    color: #737373;
+}
+
+/* footer part */
+.footer-section {
+    background: #151414;
+    position: relative;
+    /* margin-top: 100px; */
+}
+
+.footer-cta {
+    border-bottom: 1px solid #373636;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cta-text {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+.cta-text span {
+    color: #757575;
+    font-size: 15px;
+}
+
+.footer-widget {
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-widget h4 {
+    /* border-bottom: 1px solid #ff5e14; */
+    color: #fff;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.footer-widget h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: #ff5e14;
+}
+
+.list-item {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.link_footer{
+    color: #ccc;
+    text-decoration: none;
+}
+.link_footer:hover{
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.opening_hrs{
+    color: #ccc !important;
+    font-size: 25px !important;
+    margin: 0 !important;
+}
+.opening_hrs_list{
+    color: #ccc;
+    margin: 10px 0px !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}

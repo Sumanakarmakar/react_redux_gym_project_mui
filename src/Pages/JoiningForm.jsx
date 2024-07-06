@@ -22,8 +22,8 @@ const defaultTheme = createTheme();
 const JoiningForm = () => {
     const dispatch = useDispatch()
     const { serviceDetailsData } = useSelector((state) => state?.servicedetails)
-    const {loading}=useSelector((state)=>state?.booking)
-    const navigate=useNavigate()
+    const { loading } = useSelector((state) => state?.booking)
+    const navigate = useNavigate()
 
     const { id } = useParams()
     const user = JSON.parse(localStorage.getItem('user'))
@@ -41,8 +41,8 @@ const JoiningForm = () => {
         watch
     } = useForm()
 
-    const onSubmitBooking = (data) => {
-        dispatch(fetchBooking(data))
+    const onSubmitBooking = () => {
+        dispatch(fetchBooking({ name, email, scheme, price, serviceId, memberId }))
         // dispatch(fetchViewBooking(memberId))
         navigate('/services')
     }
@@ -171,7 +171,7 @@ const JoiningForm = () => {
                                                     label="Select Your Scheme"
                                                     id='scheme'
                                                     name='scheme'
-                                                    {...register("scheme")}
+                                                    // {...register("scheme")}
                                                     onChange={(e) => setScheme(e.target.value)}
 
                                                 >
@@ -191,9 +191,7 @@ const JoiningForm = () => {
                                                 name='price'
                                                 id='price'
                                                 value={price}
-                                                inputProps={{ readOnly: true }}
-                                                {...register('price')}
-
+                                                // {...register('price')}
 
                                             />
 
@@ -206,8 +204,8 @@ const JoiningForm = () => {
                                                 sx={{ mt: 3, mb: 2, backgroundColor: 'rgb(255,77,0)' }}
                                                 className='reg_button_custom'
                                             >
-                                                {loading? <ButtonLoader/>:<>Book Now</>}
-                                                
+                                                {loading ? <ButtonLoader /> : <>Book Now</>}
+
 
                                             </Button>
                                         </Box>
